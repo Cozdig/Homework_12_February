@@ -33,10 +33,10 @@ public class Main {
             System.out.println("нужно работать");
         }
 
-        byte ageChile = 14;
-        if (ageChile < 5) {
+        byte ageChild = 14;
+        if (ageChild < 5) {
             System.out.println("Ты не может кататься на аттракционе");
-        }else if (5 <= ageChile && ageChile <= 14) {
+        }else if (5 <= ageChild && ageChild < 14) {
             System.out.println("Ты можешь кататься, но только со взрослым");
         }else {
             System.out.println("Ты можешь кататься без сопровождения взрослого");
@@ -44,12 +44,12 @@ public class Main {
 
         byte allPositions = 102;
         byte  seatingPositions = 60;
-        byte occupiedPositions = 55;
+        byte occupiedPositions = 101;
         if (occupiedPositions < seatingPositions) {
             System.out.println("Есть сидячие места");
-        }else if (occupiedPositions >= seatingPositions) {
+        }else if (occupiedPositions >= seatingPositions && occupiedPositions < allPositions) {
             System.out.println("Нет сидячих мест, придется стоять");
-        }else if (occupiedPositions == allPositions) {
+        }else {
             System.out.println("Вагон забит");
         }
 
